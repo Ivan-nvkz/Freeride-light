@@ -5,7 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Фрирайд Light</title>
+   <title>ShkarpetSki</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="images/favicons/site.webmanifest">
+   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,6 +22,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -23,7 +31,7 @@
 
    <div class="wrapper">
       <div class="btn__up">&uarr;</div>
-      <header class="header">
+      <header class="header" id="home">
          <div class=" header__container">
             <div class="header__inner">
                <div class="header__top">
@@ -36,8 +44,12 @@
                            </a>
                            <nav class="menu">
                               <ul class="menu__list">
+                                 <li class="menu__list-item-home ">
+                                    <a class="menu__list-link menu__link-active" href="#home"> </a>
+                                 </li>
                                  <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#snowmobiles">ТУРЫ НА СНЕГОХОДАХ </a>
+                                    <a class="menu__list-link " href="#snowmobiles">ТУРЫ НА
+                                       СНЕГОХОДАХ </a>
                                  </li>
                                  <li class="menu__list-item">
                                     <a class="menu__list-link" href="#metal">ПОИСК МЕТАЛЛОИСКАТЕЛЕМ </a>
@@ -85,7 +97,8 @@
                         </div>
                         <ul class="social" data-da=".header__top-body,998,first">
                            <li class="social__list">
-                              <a class="social__link" href="https://www.instagram.com/andreyshkarpet/" target="_blank">
+                              <a class="social__link" href="https://www.instagram.com/andreyshkarpet/" target="_blank"
+                                 data-hover-link="instagram">
                                  <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_5076_20084)">
@@ -108,7 +121,7 @@
                               </a>
                            </li>
                            <li class="social__list">
-                              <a class="social__link" href="#">
+                              <a class="social__link" href="#" target="_blank" data-hover-link="vk">
                                  <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_5076_20089)">
@@ -125,7 +138,8 @@
                               </a>
                            </li>
                            <li class="social__list">
-                              <a class="social__link" href="tg://resolve?domain=@stzero" target="_blank">
+                              <a class="social__link" href="https://t.me/+79089548589" target="_blank"
+                                 data-hover-link="telegram">
                                  <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_5076_20091)">
@@ -145,7 +159,8 @@
                               </a>
                            </li>
                            <li class="social__list">
-                              <a class="social__link" href="https://wa.me/79089548589" target="_blank">
+                              <a class="social__link" href="https://wa.me/79089548589" target="_blank"
+                                 data-hover-link="whatsapp">
                                  <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_5076_20096)">
@@ -200,6 +215,7 @@
             <div class="snowmobile__text-decor snowmobile__text-decor-three">snowmobiles</div>
             <div class="container">
                <div class="snowmobile__inner">
+                  <img class="snowmobile__img-decor" src="images/snowmobile.svg" alt="">
                   <svg class="snowmobile__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
                      preserveAspectRatio="none">
                      <path class="snowmobile__img-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9" />
@@ -218,8 +234,8 @@
                               снова!
                            </p>
                            <p class="description__text">
-                              Более пяти лет мы занимается организацией фрирайд на снегоходах в Шерегеше. Подъемы
-                              осуществляются на лучших в своём классе снегоходах "Буран".
+                              Более пяти лет мы занимается организацией фрирайда на снегоходах в Шерегеше. Подъемы
+                              осуществляются на лучших в своём классе снегоходах "Gray Cat".
                            </p>
                            <p class="description__text">
                               Катание происходит на склонах Северного Мустага, долины Большого Таза, долины реки
@@ -977,8 +993,6 @@
             </div>
          </section>
 
-
-
       </main>
 
 
@@ -1029,7 +1043,7 @@
                      </a>
                   </li>
                   <li class=" footer-social__list">
-                     <a class="social__link footer-social__link" href="tg://resolve?domain=@stzero" target="_blank">
+                     <a class="social__link footer-social__link" href="https://t.me/+79089548589" target="_blank">
                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <g clip-path="url(#clip0_5076_200919)">
                               <path
@@ -1107,7 +1121,7 @@
                         Выберите удобный способ для связи, и мы свяжемся с Вами в течение 10 минут
                      </p>
                      <div class="application-form__body">
-                        <img class="application-form__img" src="images/form-bird-bg.png" alt="">
+                        <img class="application-form__img" src="" alt="">
                         <div class="radio-btn__inner">
                            <div class="radio-btn__box">
                               <label>
@@ -1221,17 +1235,22 @@
             </div>
          </div>
       </div>
-
-
    </div>
 
-
+   <div class="overley">
+      <div class="modal" id="thanks">
+         <div class="modal__close"></div>
+         <div class="modal__subtitle">Спасибо!</div>
+         <div class="modal__description">Ваше сообщение отправлено.</div>
+      </div>
+   </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/choices.min.js"></script>
    <script src="js/hystmodal.min.js"></script>
+   <script src="js/air-datepicker.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 
